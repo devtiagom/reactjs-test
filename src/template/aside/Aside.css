@@ -1,0 +1,9 @@
+aside {
+    /* background-color: #212121; */
+    grid-area: aside;
+
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "menu-header" "menu-body";
+}

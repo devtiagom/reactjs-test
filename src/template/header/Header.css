@@ -1,0 +1,12 @@
+header {
+    background-color: #2196F3;
+
+    border-left: 1px solid #42a5f5;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    left: 250px;
+    width: 100%;
+	height: 60px;
+
+    grid-area: header;
+}

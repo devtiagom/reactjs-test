@@ -1,0 +1,4 @@
+.menuBody {
+    grid-area: menu-body;
+    background-color: #212121;
+}
