@@ -1,5 +1,8 @@
 aside {
-    /* background-color: #212121; */
+    position: fixed;
+    width: 250px;
+    height: 100%;
+
     grid-area: aside;
 
     display: grid;

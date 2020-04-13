@@ -2,5 +2,7 @@ import React from 'react';
 import './Main.css';
 
 export default props => (
-    <main></main>
+    <main>
+        {props.children}
+    </main>
 );
