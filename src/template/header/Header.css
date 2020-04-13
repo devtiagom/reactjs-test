@@ -1,12 +1,60 @@
-header {
+.header {
+    grid-area: header;
+
     position: fixed;
     left: 250px;
-    width: 100%;
+    width: calc(100% - 250px);
     height: 60px;
     
     background-color: #2196F3;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
     border-left: 1px solid #42A5F5;    
+    color: white;
 
-    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuToggle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 20px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuToggle:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.headerOptions {
+    margin-right: 5px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerOptionsIcon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerOptionsIcon:hover {
+    background-color: rgba(255, 255, 255, .3);
 }
