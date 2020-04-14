@@ -1,6 +1,5 @@
-aside {
+.sideBar {
     position: fixed;
-    width: 250px;
     height: 100%;
 
     grid-area: aside;
@@ -9,4 +8,14 @@ aside {
     grid-template-rows: 60px 1fr;
     grid-template-columns: 1fr;
     grid-template-areas: "menu-header" "menu-body";
+}
+
+.sideBarSmall {
+    width: 200px;
+    transition: width .5s;
+}
+
+.sideBarLarge {
+    width: 250px;
+    transition: width .5s;
 }

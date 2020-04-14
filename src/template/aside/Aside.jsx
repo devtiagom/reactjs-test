@@ -5,7 +5,7 @@ import MenuHeader from './MenuHeader';
 import MenuBody from './MenuBody';
 
 export default props => (
-    <aside>
+    <aside className="sideBar sideBarLarge">
         <MenuHeader />
         <MenuBody />
     </aside>
