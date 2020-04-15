@@ -1,9 +1,7 @@
 .header {
     grid-area: header;
 
-    position: fixed;
-    left: 250px;
-    width: calc(100% - 250px);
+    position: fixed;    
     height: 60px;
     
     background-color: #2196F3;
@@ -15,6 +13,16 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.headerMenuLarge {
+    left: 250px;
+    width: calc(100% - 250px);
+}
+
+.headerMenuSmall {
+    left: 70px;
+    width: calc(100% - 70px);
 }
 
 .menuToggle {

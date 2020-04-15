@@ -1,4 +1,4 @@
-.sideBar {
+.menu {
     position: fixed;
     height: 100%;
 
@@ -10,12 +10,12 @@
     grid-template-areas: "menu-header" "menu-body";
 }
 
-.sideBarSmall {
-    width: 200px;
-    transition: width .5s;
+.menuLarge {
+    width: 250px;
+    /* transition: width .5s; */
 }
 
-.sideBarLarge {
-    width: 250px;
-    transition: width .5s;
+.menuSmall {
+    width: 70px;
+    /* transition: width .5s; */
 }

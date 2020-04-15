@@ -1,22 +1,14 @@
 import React from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+
 import './Header.css';
+import { toggleMenu } from '../aside/menuActions';
 
-export default props => {
-    const toggleMenu = () => {
-        const element = document.querySelector(".sideBar");
-        if (element.classList.contains("sideBarLarge")) {
-            element.classList.remove("sideBarLarge");
-            element.classList.add("sideBarSmall");
-        } else {
-            element.classList.remove("sideBarSmall");
-            element.classList.add("sideBarLarge");
-        }
-    }
-
-    return (
-        <header className="header">
+const Header = props => (
+        <header className={`header ${props.menuVisibility === 'large' ? 'headerMenuLarge' : 'headerMenuSmall'}`}>
             <div className="menuToggle">
-                <i className="fa fa-bars fa-2x" onClick={toggleMenu}></i>
+                <i className="fa fa-bars fa-2x" onClick={() => props.toggleMenu(props.menuVisibility)}></i>
             </div>
             <div className="headerOptions">
                 <div className="headerOptionsIcon"><i className="fa fa-home fa-2x"></i></div>
@@ -26,4 +18,8 @@ export default props => {
             </div>
         </header>
     );
-}
+
+const mapStateToProps = state => ({ menuVisibility: state.menu.visibility });
+const mapDispatchToProps = dispatch => bindActionCreators({ toggleMenu }, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
